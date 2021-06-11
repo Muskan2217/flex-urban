@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Scope One", arial, "sens serif";
+}
+
+html {
+  font-size: 15px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo span {
+  color: #3498db;
+}
+
+header .logo h4 {
+  font-weight: 300;
+  color: rgb(216, 214, 214);
+  font-size: 1.2rem;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+header a span {
+  margin-right: -0.7rem;
+}
+
+.headings {
+  margin-top: 10%;
+}
+
+.headings h1 {
+  font-size: 4rem;
+}
+.headings p {
+  font-size: 1.7rem;
+  color: rgb(216, 214, 214);
+  line-height: 1.7;
+  margin: 1.7% 0;
+}
+
+.btn {
+  width: 11rem;
+  height: 3.5rem;
+  background-color: #3498db;
+  border: none;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Scope One", arial, "sens serif";
+}
+
+/** header ends here */
+
+/* ************* top two section starts here  *************** */
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5% 0;
+  /* background-color: brown; */
+}
+
+.flex_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inner .btn {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.image_box {
+  width: 350px;
+  /* width:30%; */
+}
+
+img {
+  width: 100%;
+  border: 0.3rem double rgb(173, 169, 169);
+  border-radius: 50%;
+}
+
+.text {
+  width: 800px;
+}
+
+.text h1 {
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 2% 0;
+}
+
+.second_section {
+  width: 100%;
+  background-color: #3498db;
+}
+
+.second_section .text {
+  padding-left: 0%;
+  color: #fff;
+}
+
+.second_section .btn {
+  background-color: #fff;
+  color: #3498db;
+}
+
+/* ************* both section ends here  *************** */
+
+/********** last_section image gallary starts here *********/
+
+.last_section {
+  width: 100%;
+  text-align: center;
+  padding: 5% 0;
+  background-color: rgb(255, 254, 254);
+}
+
+.last_section .inner {
+  padding: 0%;
+}
+
+.last_section h1 {
+  font-size: 2.5rem;
+}
+.last_section h5 {
+  font-size: 1.1rem;
+  padding: 1.7% 0 4%;
+  color: rgb(189, 189, 189);
+}
+
+.last_section .image_box h5 {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 5% 0;
+  color: rgb(189, 189, 189);
+}
+
+/********** last_section image gallary ends here *********/
+
+/***** footer ******/
+footer {
+  margin: 7% 0;
+}
+
+.social span {
+  color: grey;
+  font-size: 1.2rem;
+
+  border: 0.3rem double #dadada;
+  border-radius: 50%;
+}
+
+.fa {
+  margin-left: 1.3rem;
+  padding: 0.8rem;
+}
+
+.social .fa-facebook {
+  padding: 0.8rem 1rem;
+}
+
+footer p {
+  margin-top: 3%;
+  font-size: 0.7rem;
+  color: grey;
+}
+
+/* footer ends here */
+
+/* ************************  Media query starts here  *********************** */
+
+@media (max-width: 1155px) {
+  .text {
+    width: 730px;
+  }
+}
+@media (max-width: 1080px) {
+  .text {
+    width: 640px;
+  }
+}
+
+@media (max-width: 992px) {
+  .headings h1 {
+    font-size: 2.5rem;
+    margin-top: 25%;
+  }
+  .headings p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 9rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .image_box {
+    margin: 0 auto;
+  }
+
+  /* .text {
+    margin: 0 auto;
+    text-align: center;
+  } */
+
+
+  .text{ display: flex;
+  flex-direction: column;
+  align-items: center;
+   text-align: justify;
+   padding: 0 7%;
+   margin:  0 auto;
+}
+
+.second_section .text {
+   padding: 0 7%;
+}
+
+  .inner .btn {
+    margin:2% 0 9%;
+  }
+}
+
+@media (max-width: 768px) {
+  .social span {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .social .fa-facebook {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .wrapper a {
+    font-size: 0.8rem;
+  }
+
+  .text h1 {
+    font-size: 1.5rem;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+  }
+
+  .inner .btn {
+    width: 7rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .last_section .inner {
+    padding: 0%;
+  }
+
+  .last_section h1 {
+    font-size: 2rem;
+  }
+  .last_section h5 {
+    font-size: 0.8rem;
+  }
+  
+
+}
+
+
+@media (max-width: 320px) {
+  html {
+  font-size: 10px;
+}
+
+body img{ width:70%;
+   }
+    
+   #image_box{
+   margin-left: 7rem;
+  }
+
+  
+.headings {
+  margin-top: 50%;
+  padding: 0 2.5rem;
+}
+}
